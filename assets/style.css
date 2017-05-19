@@ -1,0 +1,268 @@
+
+body {
+  background-color: #FFFFFF;
+  padding-top: 40px;
+}
+
+.main-overflow {
+  overflow: hidden;
+}
+
+.navbar-default {
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+
+.static {
+    position: static;
+  }
+
+.name-container {
+  font-family: "rift",sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px;
+  text-align: center;
+}
+
+.name-container a {
+  color: #070707 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #4c4b4b !important;
+  text-decoration: none !important;
+}
+
+.about-container {
+  color: #8a828a;
+  font-family: "rift",sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  top: -5px;
+  margin: -5px;
+  text-align: center;
+
+}
+
+.work-container  {
+  color: #8a828a;
+  font-family: "rift",sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  top: -5px;
+  margin: -5px;
+  text-align: center;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all .95s;
+  overflow: hidden;
+  height: 0;
+  opacity: 0.8;
+  background: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.blue-drag-img:hover .overlay, .overlay:hover, .yellow-ice-still-img:hover .overlay {
+  height: 100%;
+  background: white;
+}
+.blue-drag-img > blue-drag-img, .yellow-ice-still-img > yellow-ice-still-img {
+  display: block;
+}
+
+
+.video-container {
+  position: absolute;
+  right: 125px;
+  bottom: 45px;
+  max-width: 75%;
+}
+
+
+.video {
+  max-width: 100%;
+  z-index: -1;
+}
+
+.video video {
+  max-width: 100%;
+}
+
+
+.blue-desert-drag-still {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transition: all .95s;
+  overflow: hidden;
+  height: 0;
+  background: white;
+  opacity: .5;
+  text-align: center;
+
+  font-family: "rift",sans-serif;
+  font-size: 20px;
+
+}
+
+.blue-desert-drag-still:hover .overlay2, .overlay2:hover{
+  height: 100%;
+  background: white;
+}
+.blue-desert-drag-still > blue-desert-drag-still {
+  display: block;
+
+}
+
+.row col-md-6 {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 70px;
+}
+
+.blue-vid-still1{
+  margin-left: -15px;
+
+}
+
+.overlay3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transition: all .95s;
+  overflow: hidden;
+  height: 0;
+  background: white;
+  opacity: .5;
+  text-align: center;
+  margin-right: 55px;
+
+  font-family: "rift",sans-serif;
+  font-size: 20px;
+
+}
+
+.blue-vid-still1:hover .overlay3, .overlay3:hover{
+  height: 100%;
+  background: white;
+}
+.blue-vid-still1 > blue-vid-still1 {
+  display: block;
+}
+
+.overlay4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transition: all .95s;
+  overflow: hidden;
+  height: 0;
+  background: white;
+  opacity: .5;
+  text-align: center;
+  margin-left: auto;
+  margin-right: -60px;
+
+  font-family: "rift",sans-serif;
+  font-size: 20px;
+
+}
+
+.blue-vid-still2:hover .overlay4, .overlay4:hover{
+  height: 100%;
+  background: white;
+}
+.blue-vid-still2 > blue-vid-still2 {
+  display: block;
+}
+
+
+
+/* hamburger glyphicon */
+
+.hamburger {
+  position: absolute;
+  margin: 35px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.line {
+  background: #8A828A;
+  width: 50px;
+  height: 6px;
+  margin-bottom: 5px;
+}
+
+.menu {
+  background-color: rgba(226, 222, 226, 0.9);
+  width: 483px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -520px;
+  transition: left .3s;
+  z-index: 3;
+
+}
+
+.menu-item:first-child {
+  margin-top: 180px;
+}
+
+
+.menu--open {
+  left: 0;
+}
+
+.menu-item {
+  color: #8c8989;
+  width: 100%;
+  font-family: "rift",sans-serif;
+  font-size: 25px;
+  padding: 1rem 20rem;
+  box-sizing: border-box;
+
+}
+
+.menu-item a {
+  color: #8c8989!important;
+  text-decoration: none !important;
+}
+
+.menu-item:hover a {
+  color: #8c8989 !important;
+  text-decoration: none !important;
+}
+
+
+.menu-item:hover {
+  color: #8c8989;
+  background: #FFFFFF;
+  cursor: pointer;
+}
