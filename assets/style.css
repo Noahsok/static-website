@@ -61,7 +61,7 @@ a:hover {
   text-align: center;
 }
 
-
+/* overlay for work-container projects that link to different page*/
 .overlay {
   position: absolute;
   bottom: 0;
@@ -85,6 +85,14 @@ a:hover {
   display: block;
 }
 
+/* margin for the grid layout*/
+
+.col-md-6 {
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+/* video-container for homepage nested looped video */
 
 .video-container {
   position: absolute;
@@ -103,6 +111,7 @@ a:hover {
   max-width: 100%;
 }
 
+/* more indepth bootstrap grid system */
 
 .blue-desert-drag-still {
   margin-top: 100px;
@@ -110,6 +119,15 @@ a:hover {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.unedited-vid {
+  margin-top: -30px;
+  margin-bottom: 70px;
+  margin-left: 85px;
+  margin-right: 5px;
+}
+
+/* overlay to show detail discription of the image */
 
 .overlay2 {
   position: absolute;
@@ -122,21 +140,26 @@ a:hover {
   background: white;
   opacity: .5;
   text-align: center;
+  color: black;
+
+
 
   font-family: "rift",sans-serif;
   font-size: 20px;
+
 
 }
 
 .blue-desert-drag-still:hover .overlay2, .overlay2:hover{
   height: 100%;
-  background: white;
+
 }
 .blue-desert-drag-still > blue-desert-drag-still {
   display: block;
 
 }
 
+/* margin for row and column */
 .row col-md-6 {
   margin-left: -5px;
   margin-right: -5px;
@@ -145,8 +168,15 @@ a:hover {
 
 .blue-vid-still1{
   margin-left: -15px;
+  margin-top: -80px
 
 }
+
+.blue-vid-still2 {
+  margin-top: -80px;
+}
+
+/* overlay to show detail discription of the image */
 
 .overlay3 {
   position: absolute;
@@ -159,7 +189,7 @@ a:hover {
   background: white;
   opacity: .5;
   text-align: center;
-  margin-right: 55px;
+  margin-right: 15px;
 
   font-family: "rift",sans-serif;
   font-size: 20px;
@@ -169,6 +199,7 @@ a:hover {
 .blue-vid-still1:hover .overlay3, .overlay3:hover{
   height: 100%;
   background: white;
+  color: #000000;
 }
 .blue-vid-still1 > blue-vid-still1 {
   display: block;
