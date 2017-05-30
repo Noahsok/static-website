@@ -181,7 +181,9 @@ body {
 
   }
 
-  .project-works:hover .overlay, .overlay:hover {
+  .project-works:hover
+  .overlay,
+  .overlay:hover {
     height: 100%;
     background: white;
     display: block;
@@ -189,35 +191,39 @@ body {
 
   /* image page layout and overlay layout*/
 
-/*
+
   .overlay-text {
-    position: relative;
-    bottom: -300px;
+    position: absolute;
+    bottom: -500px;
     left: 0;
     right: 0;
     transition: all .100s;
-    opacity: .85;
     overflow: hidden;
     height: 0;
     background: white;
-    text-align: left;
+    text-align: center;
     margin-right: 15px;
     margin-left: 20px;
     font-family: "rift", sans-serif;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
   }
 
 
 
   .overlay-text-wrapper:hover .overlay-text, .overlay-text:hover {
     height: 100%;
-  }
-
-
-  .overlay-text-wrapper > .overlay-text-wrapper {
     display: block;
   }
+
+  .overlay-text-img-mid {
+    bottom: -370px;
+  }
+
+  .overlay-text-img-last {
+    bottom: -370px;
+  }
+
 
   /* more indepth bootstrap grid system */
 
@@ -253,11 +259,8 @@ body {
 
   .overlay-text-wrapper.overlay-text-wrapper-last{
     margin-bottom: 25px;
-    
 
   }
-
-
 
   .unedited-vid {
     margin-top: 100px;
