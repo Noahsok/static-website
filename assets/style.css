@@ -86,6 +86,27 @@ body {
     text-align: center;
   }
 
+
+/* dropdown button for description of each works page */
+
+  .yellow-works-dropdown {
+    color: #8a828a;
+    font-family: "rift",sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    top: -5px;
+    margin: -5px;
+    text-align: center;
+  }
+
+  .yellow-works-dropdown #dLabel {
+    
+  }
+
+
+
   /* hamburger glyphicon */
 
   .hamburger {
