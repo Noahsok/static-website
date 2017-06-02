@@ -1,0 +1,9 @@
+{
+  "name": "noahsokoloffstudio",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.15.3"
+  }, 
+  "scripts": {}
+}
