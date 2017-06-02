@@ -36,7 +36,6 @@ body {
     max-width: 100%;
   }
 
-  /* hamburger glyphicon/ page titles/ name */
 
   /* name-container */
 
@@ -89,7 +88,7 @@ body {
 
 /* dropdown button for description of each works page */
 
-  .yellow-works-dropdown {
+  .works-dropdown {
     color: #8a828a;
     font-family: "rift",sans-serif;
     font-style: normal;
@@ -99,10 +98,17 @@ body {
     top: -5px;
     margin: -5px;
     text-align: center;
+
   }
 
-  .yellow-works-dropdown #dLabel {
-    
+  .dropdown-menu {
+    text-align: center;
+    margin-left: 300px;
+
+  }
+
+  .works-dropdown a {
+    color: #8a828a;
   }
 
 

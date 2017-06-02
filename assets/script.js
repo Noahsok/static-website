@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  /* hamburger glyphicon */
+
   var menu = $(".menu");
   var hamburger = $(".hamburger");
   var line = $(".line");
