@@ -185,10 +185,11 @@ body {
   }
 
   p {
-    margin-top: 200px;
+    color: black;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 320px;
     max-width: 80%;
   }
 
