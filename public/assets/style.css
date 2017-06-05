@@ -186,10 +186,10 @@ body {
 
   p {
     color: black;
-    margin-top: 20px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-    width: 320px;
+    width: 550px;
     max-width: 80%;
   }
 
@@ -244,12 +244,22 @@ body {
     display: block;
   }
 
-  .overlay-text-img-mid {
+
+  .overlay-text-img-mid-blue {
     bottom: -370px;
   }
 
-  .overlay-text-img-last {
+  .overlay-text-img-last-blue {
     bottom: -370px;
+  }
+
+  .overlay-text-img-mid-yellow {
+    bottom: -470px;
+  }
+
+  .overlay-text-img-last-yellow {
+    bottom: -370px;
+
   }
 
 
@@ -284,6 +294,12 @@ body {
     margin-bottom: 20px;
 
   }
+
+  .overlay-text-wrapper-yellow {
+    margin-top: 100px;
+
+  }
+
 
   .overlay-text-wrapper.overlay-text-wrapper-last{
     margin-bottom: 25px;
