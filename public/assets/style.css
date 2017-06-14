@@ -222,7 +222,7 @@ body {
 
   .overlay-text {
     position: absolute;
-    bottom: -500px;
+    bottom: 0;
     left: 0;
     right: 0;
     transition: all .100s;
@@ -230,8 +230,6 @@ body {
     height: 0;
     background: white;
     text-align: center;
-    margin-right: 15px;
-    margin-left: 20px;
     font-family: "rift", sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -292,6 +290,7 @@ body {
     max-width: 800px;
     text-align: center;
     margin-bottom: 20px;
+    position: relative;
 
   }
 
