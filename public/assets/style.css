@@ -186,11 +186,9 @@ body {
 
   p {
     color: black;
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
-    max-width: 80%;
+    text-align: center;
+    width: 500px;
+    max-width: 100%;
   }
 
   /* overlay for works-container projects that link to different pages on the works page */
