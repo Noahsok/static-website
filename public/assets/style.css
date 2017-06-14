@@ -238,27 +238,10 @@ body {
 
 
   .overlay-text-wrapper:hover .overlay-text, .overlay-text:hover {
-    height: 100%;
+    height: initial;
     display: block;
   }
 
-
-  .overlay-text-img-mid-blue {
-    bottom: -370px;
-  }
-
-  .overlay-text-img-last-blue {
-    bottom: -270px;
-  }
-
-  .overlay-text-img-mid-yellow {
-    bottom: -470px;
-  }
-
-  .overlay-text-img-last-yellow {
-    bottom: -370px;
-
-  }
 
 
   /* more indepth bootstrap grid system */
