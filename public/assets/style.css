@@ -151,7 +151,7 @@ body {
   }
 
   .menu-item {
-    color: #8c8989;
+    color: ##379888;
     width: 100%;
     font-family: "rift",sans-serif;
     font-size: 25px;
@@ -191,8 +191,9 @@ body {
   }
 
   .dropdown-text {
-    color: black;
+    color: #379888;
     text-align: center;
+    font-size: 20px;
     width: 500px;
     max-width: 100%;
   }
