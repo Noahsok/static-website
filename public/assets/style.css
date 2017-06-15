@@ -320,4 +320,5 @@ body {
 
   .social-icon img{
     width: 150px;
+    max-width: 100%;
   }
