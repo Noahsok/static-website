@@ -327,3 +327,7 @@ body {
     width: 100px;
     max-width: 100%;
   }
+
+  .mailchimp {
+    margin-top: 50px;
+  }
