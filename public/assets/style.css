@@ -318,6 +318,10 @@ body {
 
   /* social icon */
 
+  .social-icon {
+    margin-top: 100px;
+  }
+
   .social-icon img{
     width: 150px;
     max-width: 100%;
