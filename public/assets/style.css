@@ -334,7 +334,7 @@ body {
     }
 
     #insta: hover {
-      background-position: -25px 0px;
+      background-position: 25px 0px;
     }
 
   .mailchimp {
