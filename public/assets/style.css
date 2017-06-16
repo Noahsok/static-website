@@ -325,7 +325,7 @@ body {
 
   .social-icon img,
   .insta,
-  .freddie  {
+  #freddie  {
     width: 100px;
     max-width: 100%;
   }
@@ -336,7 +336,7 @@ body {
       max-width: 100%;
     }
 
-    .freddie:hover {
+    #freddie:hover {
       content: url('imeges/mc_freddie_color.jpg');
       width: 100px;
     }
