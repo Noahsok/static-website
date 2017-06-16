@@ -329,12 +329,14 @@ body {
   }
 
   #insta {
-    width: 25px; height: 25px;
-    background: url('assets/images/IG_Glyph_Fill.jpg') no-repeat left top;
+    width: 25px;
+    height: 25px;
     }
 
     #insta: hover {
-      background-position: 25px 0px;
+      background: url('assets/images/IG_Glyph_Fill.jpg') no-repeat left top;
+      width: 25px;
+      height: 25px;
     }
 
   .mailchimp {
