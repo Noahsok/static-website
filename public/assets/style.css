@@ -336,7 +336,7 @@ body {
       max-width: 100%;
     }
 
-    .freddie {
+    .freddie:hover {
       content: url('imeges/freddie-color.jpg');
       width: 100px;
     }
