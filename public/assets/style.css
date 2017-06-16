@@ -337,13 +337,9 @@ body {
     }
 
     .freddie:hover {
-      content: url('assets/imeges/mc_freddie_color.jpg');
+      content: url('imeges/mc_freddie_color.jpg');
       width: 100px;
     }
-
-  .mailchimp {
-    margin-top: 50px;
-  }
 
   .mc_embed_signup_scroll {
     position: absolute;
