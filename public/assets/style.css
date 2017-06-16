@@ -328,13 +328,13 @@ body {
     max-width: 100%;
   }
 
-  #insta {
+  .insta {
     width: 100px;
     max-width: 100%;
 
     }
 
-    #insta:hover {
+    .insta:hover {
       content: url('images/insta.png');
       width: 100px;
       max-width: 100%;
