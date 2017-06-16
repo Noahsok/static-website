@@ -318,22 +318,20 @@ body {
 
   /* social icon */
 
-  /*.social-icon {
+  .social-icon {
     margin-top: 100px;
     margin-left: 523px;
-  }*/
+  }
 
-  .social-icon,
   .insta,
   .freddie  {
-    width: 100px;
-    max-width: 100%;
     margin-top: 100px;
     margin-left: 523px;
   }
 
     .insta:hover {
       content: url('images/insta.png');
+      width: 100px;
 
     }
 
