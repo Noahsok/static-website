@@ -333,6 +333,10 @@ body {
     background: url('assets/images/IG_Glyph_Fill.jpg') no-repeat left top;
     }
 
+    #insta: hover {
+      background-position: -25px 0px;
+    }
+
   .mailchimp {
     margin-top: 50px;
   }
