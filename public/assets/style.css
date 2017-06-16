@@ -334,7 +334,7 @@ body {
     }
 
     #insta:hover {
-      content: url('assets/images/insta.png');
+      content: url('images/insta.png');
       width: 25px;
       height: 25px;
     }
