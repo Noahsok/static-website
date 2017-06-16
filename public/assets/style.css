@@ -337,7 +337,7 @@ body {
     }
 
     .freddie:hover {
-      content: url('imeges/freddie-color.jpg');
+      content: url('assets/imeges/freddie-color.jpg');
       width: 100px;
     }
 
