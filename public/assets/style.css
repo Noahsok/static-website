@@ -323,16 +323,11 @@ body {
     margin-left: 523px;
   }
 
-  .social-icon img{
+  .social-icon img
+  .insta  {
     width: 100px;
     max-width: 100%;
   }
-
-  .insta {
-    width: 100px;
-    max-width: 100%;
-
-    }
 
     .insta:hover {
       content: url('images/insta.jpg');
