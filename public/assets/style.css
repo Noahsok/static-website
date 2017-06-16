@@ -334,8 +334,6 @@ body {
 
   .mc_embed_signup_scroll {
     position: absolute;
-    font-family: "rift",sans-serif;
-    font-style: normal;
-    font-size: 15px;
+    
     left: -5000px;
   }
