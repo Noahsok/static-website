@@ -331,9 +331,13 @@ body {
   .mailchimp {
     margin-top: 50px;
   }
+  .mailchimp:hover {
+    content: src('assets/images/IG_Glyph_Fill.jpg');
+
+  }
 
   .mc_embed_signup_scroll {
     position: absolute;
-    
+
     left: -5000px;
   }
