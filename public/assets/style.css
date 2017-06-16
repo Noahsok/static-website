@@ -334,7 +334,7 @@ body {
     }
 
     #insta:hover {
-      content: url('assets/images/IG_Glyph_Fill.jpg');
+      content: url('assets/images/insta.jpg');
       width: 25px;
       height: 25px;
     }
