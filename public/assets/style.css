@@ -328,12 +328,13 @@ body {
     max-width: 100%;
   }
 
+  #insta {
+    width: 25px; height: 25px;
+    background: url('assets/images/IG_Glyph_Fill.jpg') no-repeat left top;
+    }
+
   .mailchimp {
     margin-top: 50px;
-  }
-  .mailchimp: hover {
-    content: src('assets/images/IG_Glyph_Fill.jpg');
-
   }
 
   .mc_embed_signup_scroll {
