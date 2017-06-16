@@ -337,7 +337,7 @@ body {
     }
 
     .freddie:hover {
-      content: url('mc_freddie_color.jpg');
+      content: url('images/mc_freddie_color.jpg');
       width: 100px;
     }
 
