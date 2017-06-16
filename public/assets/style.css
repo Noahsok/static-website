@@ -329,14 +329,16 @@ body {
   }
 
   #insta {
-    width: 25px;
-    height: 25px;
+    width: 100px;
+    max-width: 100%;
+
     }
 
     #insta:hover {
       content: url('images/insta.png');
-      width: 25px;
-      height: 25px;
+      width: 100px;
+      max-width: 100%;
+
     }
 
   .mailchimp {
