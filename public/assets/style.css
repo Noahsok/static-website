@@ -323,6 +323,7 @@ body {
     margin-left: 523px;
   }
 
+  .social-icon,
   .insta,
   .freddie  {
     margin-top: 100px;
@@ -331,13 +332,13 @@ body {
 
     .insta:hover {
       content: url('images/insta.png');
-      width: 100px;
+
 
     }
 
     .freddie:hover {
       content: url('images/mc_freddie_color.jpg');
-      width: 100px;
+
     }
 
   .mc_embed_signup_scroll {
