@@ -329,12 +329,8 @@ body {
     max-width: 100%;
   }
 
-  .insta {
-    width: 100px;
-    max-width: 100%;
-  }
 
-  .insta:hover {
+  #insta:hover {
     content: url('images/IG_Glyph_Fill.jpg');
     width: 100px;
 
