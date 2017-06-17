@@ -324,16 +324,14 @@ body {
   }
 
   .social-icon,
-  .insta,
   .freddie  {
-    position: relative;
     width: 100px;
     max-width: 100%;
-
   }
 
-  .insta img{
+  .insta {
     width: 100px;
+    max-width: 100%;
   }
 
   .insta:hover {
