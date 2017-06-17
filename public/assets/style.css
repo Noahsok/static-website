@@ -326,6 +326,7 @@ body {
   .social-icon,
   .insta,
   .freddie  {
+    position: relative;
     width: 100px;
     max-width: 100%;
 
