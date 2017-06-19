@@ -331,7 +331,7 @@ body {
     max-width: 100%;
   }
 
-  .insta {
+  .insta-logo {
     background-image: url('images/glyph-logo.jpg);
     background-size: 100px 100px;
     width: 100px;
@@ -339,8 +339,8 @@ body {
     margin-left: 50px;
   }
 
-  .insta:hover {
-    
+  .insta-logo:hover {
+
   }
 
   .freddie {
