@@ -273,7 +273,7 @@ body {
 
   .project-works{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 0px;
     max-width: 570px;
     height: 333px;
   }
