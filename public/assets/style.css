@@ -336,12 +336,12 @@ body {
 
   }
 
-  #freddie {
+  .freddie {
     background-image: url('images/freddie_black.jpg');
     width: 100px;
   }
 
-  #freddie:hover {
+  .freddie:hover {
     background-image: url('image/mc_freddie_color.jpg')
   }
 
