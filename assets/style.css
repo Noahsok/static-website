@@ -332,17 +332,16 @@ body {
   }
 
   .insta-logo {
-    background-image: url('images/glyph-logo.jpg);
+    background-image : url('images/glyph-logo.jpg');
     background-size: 100px 100px;
     width: 100px;
     height: 100px;
     margin-left: 50px;
+
   }
 
   .insta-logo:hover {
-    background-image: url('images/IG_Glyph_Fill.jpg');
-    
-
+    background-image : url('images/IG_Glyph_Fill.jpg');
   }
 
   .freddie {
