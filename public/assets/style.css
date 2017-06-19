@@ -339,6 +339,7 @@ body {
   .freddie {
     background-image: url('images/freddie_black.jpg');
     width: 100px;
+    height: 100px;
   }
 
   .freddie:hover {
