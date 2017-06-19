@@ -61,7 +61,7 @@ body {
   /* page titles */
 
   .about-container {
-    color: #8a828a;
+    color: #3bc9b2;
     font-family: "rift",sans-serif;
     font-style: normal;
     font-size: 25px;
@@ -74,7 +74,7 @@ body {
   }
 
   .works-container  {
-    color: #8a828a;
+    color: #3bc9b2;
     font-family: "rift",sans-serif;
     font-style: normal;
     font-size: 25px;
@@ -89,7 +89,7 @@ body {
 /* dropdown button for description of each works page */
 
   .works-dropdown {
-    color: #8a828a;
+    color: #3bc9b2;
     font-family: "rift",sans-serif;
     font-style: normal;
     font-size: 25px;
@@ -108,7 +108,7 @@ body {
   }
 
   .works-dropdown a {
-    color: #8a828a;
+    color: #3bc9b2;
   }
 
 
