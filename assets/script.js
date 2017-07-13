@@ -1,4 +1,4 @@
-// practice to understand javascript better: write vanilla JS from Jquery. 
+// practice to understand javascript better: write vanilla JS from Jquery.
 
 
 
