@@ -1,21 +1,46 @@
-$(document).ready(function(){
+// practice to understand javascript better: write vanilla JS from Jquery.
+
+
+
+
+//most comments with "//" are jquery:
+  //$(document).ready(function(){
+document.addEventListener("DOMContentLoaded",function(){
 
   /* hamburger glyphicon */
+//$=jquery
+//".menu" ""= string .menu = selector
+  //var menu = $(".menu");
+  var menu = document.getElementsByClassName("menu")[0];
+  //var hamburger = $(".hamburger");
+  var hamburger = document.getElementsByClassName("hamburger")[0];
+  //var line = $(".line");
+  var line = document.getElementsByClassName("line")[0];
 
-  var menu = $(".menu");
-  var hamburger = $(".hamburger");
-  var line = $(".line");
   var menuOpen;
 
+  function setCss(element, property, value){
+    element.style[property] = value;
+  }
+
   function openMenu(){
+<<<<<<< HEAD
     menu.css("left", "0px");
     line.css("background", "#8A828A");
+=======
+    setCss(menu, "left", "0px");
+    //menu.style.left = '0'; this would be the cleaner way instead of a function.
+    setCss(line, "background", "#8A828A");
+    //line.style.background = '#8A828A';
+>>>>>>> js-hamburger
     menuOpen = true;
   }
 
   function closeMenu(){
-    menu.css("left", "-520px");
-    line.css("background", "#8A828A");
+    setCss(menu, "left", "-520px");
+    //menu.style.left = '-520px';
+    setCss(line, "background", "#8A828A");
+    //line.style.background = '#8A828A';
     menuOpen = false;
   }
 
@@ -27,25 +52,32 @@ $(document).ready(function(){
     }
   }
 
-  hamburger.on({
-    mouseenter: function(){
-      openMenu();
-    }
-  });
+//excute openMenu on mouseenter of hamburger
 
-  menu.on({
-    mouseleave: function(){
-      closeMenu();
-    }
+  hamburger.addEventListener("mouseenter", openMenu);
 
-  });
+  //hamburger.on({
+    //mouseenter: function(){
+      //openMenu();
+    //}
+  //});
 
-  hamburger.on({
-    click: function(){
-      toggleMenu();
-    }
-  })
+  menu.addEventListener("mouseleave", closeMenu);
 
+  //menu.on({
+    //mouseleave: function(){
+      //closeMenu();
+    //}
+  //});
+
+  hamburger.addEventListener("click", toggleMenu);
+  //hamburger.on({
+    //click: function(){
+      //toggleMenu();
+    //}
+  //})
+
+<<<<<<< HEAD
   /* modal */
 
 function openModal() {
@@ -53,4 +85,7 @@ function openModal() {
   el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visibile";
 }
 
+=======
+//}); this is from jQuery
+>>>>>>> js-hamburger
 });
