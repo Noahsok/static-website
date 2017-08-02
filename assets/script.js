@@ -23,18 +23,7 @@ document.addEventListener("DOMContentLoaded",function(){
     element.style[property] = value;
   }
 
-  function openMenu(){
-<<<<<<< HEAD
-    menu.css("left", "0px");
-    line.css("background", "#8A828A");
-=======
-    setCss(menu, "left", "0px");
-    //menu.style.left = '0'; this would be the cleaner way instead of a function.
-    setCss(line, "background", "#8A828A");
-    //line.style.background = '#8A828A';
->>>>>>> js-hamburger
-    menuOpen = true;
-  }
+
 
   function closeMenu(){
     setCss(menu, "left", "-520px");
@@ -77,7 +66,7 @@ document.addEventListener("DOMContentLoaded",function(){
     //}
   //})
 
-<<<<<<< HEAD
+
   /* modal */
 
 function openModal() {
@@ -85,7 +74,7 @@ function openModal() {
   el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visibile";
 }
 
-=======
+
 //}); this is from jQuery
->>>>>>> js-hamburger
+
 });
