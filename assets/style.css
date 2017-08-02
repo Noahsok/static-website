@@ -1,7 +1,20 @@
+
+
 body {
   background-color: #FFFFFF;
   padding-top: 40px;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+}
+
 
 /* home page  */
 .main-overflow {
@@ -12,53 +25,68 @@ body {
     position: static;
   }
 
-  .navbar-default {
-    background-color: #FFFFFF !important;
-    border-color: #FFFFFF !important;
+  .ns-navbar {
+    overflow: hidden;
+    height:90px;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; /* when scrolling the ns-navbar is alway in front of everything  */
   }
 
   /* video-container for homepage nested looped video */
 
   .video-container {
-    position: absolute;
-    right: 125px;
-    bottom: 45px;
-    max-width: 75%;
+
+    margin: auto 0;
+    max-height: calc(100vh - 62px);
+    position: relative;
+    z-index: -1; /*video behind ns-navbar */
   }
 
 
   .video {
     max-width: 100%;
-    z-index: -1;
+    margin: auto 0;
+
   }
 
   .video video {
     max-width: 100%;
+    max-height: calc(100vh - 62px);
+    margin: 0 auto;
+    display: block;
+
   }
 
 
   /* name-container */
+
+  .name-container a {
+    text-decoration: none;
+    color: black;
+
+  }
 
   .name-container {
     font-family: "rift",sans-serif;
     font-style: normal;
     font-size: 30px;
     font-weight: 500;
-    margin: 10px;
+    margin-top: 10px;
     text-align: center;
+    position: relative;
+    z-index: 1;
   }
 
-  .name-container a {
-    color: #070707 !important;
-    text-decoration: none !important;
-  }
 
-  a:hover {
-    color: #4c4b4b !important;
-    text-decoration: none !important;
-  }
+  .works-container  {
+    color: #3bc9b2;
 
-  /* page titles */
+
+  }
 
   .about-container {
     color: #3bc9b2;
@@ -73,42 +101,64 @@ body {
 
   }
 
-  .works-container  {
-    color: #3bc9b2;
-    font-family: "rift",sans-serif;
-    font-style: normal;
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
-    top: -5px;
-    margin: -5px;
-    text-align: center;
+  a:hover {
+    color: #4c4b4b !important;
+    text-decoration: none !important;
   }
 
 
 /* dropdown button for description of each works page */
 
-  .works-dropdown {
-    color: #3bc9b2;
-    font-family: "rift",sans-serif;
-    font-style: normal;
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
-    top: -5px;
-    margin: -5px;
+#openModal {
+     visibility: hidden;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+}
+
+#openModal a {
+  top: 10px;
+}
+
+#openModal div {
+     width:300px;
+     margin: 100px auto;
+     background-color: #fff;
+     border:1px solid #000;
+     padding:15px;
+     position: absolute;
+     color: #3bc9b2;
+     font-family: "rift",sans-serif;
+     font-style: normal;
+     font-size: 25px;
+     font-weight: 500;
+     text-align:center;
+}
+
+
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
     text-align: center;
+    top: 10px;
+    width: 24px;
+    text-decoration: none;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px #000;
 
   }
-
-  .dropdown-menu {
-    text-align: center;
-    margin-left: 300px;
-
-  }
-
-  .works-dropdown a {
-    color: #3bc9b2;
+  .close:hover{
+    background: #00d9ff;
   }
 
 
@@ -136,7 +186,7 @@ body {
     position: fixed;
     top: 0;
     left: -520px;
-    transition: left .3s;
+    transition: left .90s;
     z-index: 3;
 
   }
@@ -151,23 +201,24 @@ body {
   }
 
   .menu-item {
-    color: #3bc9b2 !important;
+    color: #3bc9b2;
     width: 100%;
     font-family: "rift",sans-serif;
     font-size: 25px;
-    padding: 1rem 20rem;
+    padding: 1rem 15rem;
     box-sizing: border-box;
+    padding-right: 162px;
 
   }
 
   .menu-item a {
-    color: #3bc9b2!important;
-    text-decoration: none !important;
+    color: #3bc9b2;
+    text-decoration: none;
   }
 
   .menu-item:hover a {
-    color: #8c8989 !important;
-    text-decoration: none !important;
+    color: #8c8989;
+    text-decoration: none;
   }
 
 
@@ -202,45 +253,41 @@ body {
     color: #3bc9b2;
   }
 
+  /* container grid system  */
 
+  .container {
+    max-width: 1140px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .project-works {
+    width: 50%;
+    float: left;
+  }
+
+  .project-works img {
+    position: relative;
+    padding: 10px;
+  }
+
+  .responsive-img {
+    max-width: 100%;
+  }
+
+  .clearfix-container:after {
+    display: block;
+    height: 0;
+    clear: both;
+
+  }
 
 
   /* overlay for works-container projects that link to different pages on the works page */
-  .overlay {
-    position: absolute;
-    top: 310px;
-    left: 10px;
-    right: -10px;
-    transition: all .95s;
-    overflow: hidden;
-    height: 0;
-    /* opacity: 0.8; */
-    background: white;
-    text-align: center;
-    font-size: 20px;
-
-  }
-
-  .project-works:hover
-  .overlay,
-  .overlay:hover {
-    height: 100%;
-    background: white;
-    display: block;
-  }
-
-  /* image page layout and overlay layout*/
-
 
   .overlay-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: all .100s;
-    overflow: hidden;
-    height: 0;
-    background: white;
     color: #3bc9b2;
     text-align: center;
     font-family: "rift", sans-serif;
@@ -248,9 +295,40 @@ body {
     font-weight: 400;
   }
 
+  .overlay {
+    background: white;
+    position: relative;;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0;
 
 
-  .overlay-text-wrapper:hover .overlay-text, .overlay-text:hover {
+
+
+
+  }
+
+  .project-works:hover
+  .overlay,
+  .overlay:hover {
+    height: 50px;
+    background: white;
+    display: block;
+    transition: all .100s;
+  }
+
+  /* image page layout and overlay layout*/
+
+
+
+
+
+
+  .overlay-text-wrapper:hover
+  .overlay-text,
+  .overlay-text:hover {
     height: initial;
     display: block;
   }
@@ -261,21 +339,14 @@ body {
 
 
 
-  .container {
-    margin-top: 5px;
+  .menu-container {
+    top: 0;
     color: #3bc9b2;
     font-family: "rift",sans-serif;
     font-style: normal;
     font-size: 25px;
     font-weight: 500;
-    position: relative;
-  }
-
-  .project-works{
-    margin-top: 10px;
-    margin-left: 0px;
-    max-width: 570px;
-    height: 333px;
+    position: absolute;;
   }
 
 
@@ -310,12 +381,6 @@ body {
   }
 
 
-  /* margin for row  */
-  .row col-md-6 {
-    margin-left: -5px;
-    margin-right: -5px;
-    margin-bottom: 70px;
-  }
 
   /* social icon */
 

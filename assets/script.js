@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   function openMenu(){
     menu.css("left", "0px");
-    line.css("background", "##8A828A");
+    line.css("background", "#8A828A");
     menuOpen = true;
   }
 
@@ -45,5 +45,12 @@ $(document).ready(function(){
       toggleMenu();
     }
   })
+
+  /* modal */
+
+function openModal() {
+  el = document.getElementById("openModal");
+  el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visibile";
+}
 
 });
