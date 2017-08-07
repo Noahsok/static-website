@@ -23,7 +23,13 @@ document.addEventListener("DOMContentLoaded",function(){
     element.style[property] = value;
   }
 
-
+  function openMenu(){
+    setCss(menu, "left", "0px");
+    //menu.style.left = '0'; this would be the cleaner way instead of a function.
+    setCss(line, "background", "#8A828A");
+    //line.style.background = '#8A828A';
+    menuOpen = true;
+  }
 
   function closeMenu(){
     setCss(menu, "left", "-520px");
@@ -69,12 +75,31 @@ document.addEventListener("DOMContentLoaded",function(){
 
   /* modal */
 
-function openModal() {
-  el = document.getElementById("openModal");
-  el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visibile";
-}
 
+  // get modal
+  var modal = document.getElementById('link');[0]
 
-//}); this is from jQuery
+  // get link that opens modal
+  var link = document.getElementById("modalLink");[0]
 
-});
+  // get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  //when the user clicks on link , open modal
+modalLink.onclick = function() {
+    modal.style.display = "modal";
+
+  }
+
+  // when the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // when users clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  });
