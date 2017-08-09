@@ -75,31 +75,29 @@ document.addEventListener("DOMContentLoaded",function(){
 
   /* modal */
 
+  // Get the modal
+var modal = document.getElementById('myModal');
 
-  // get modal
-  var modal = document.getElementById('link');[0]
+// Get the button that opens the modal
+var btn = document.getElementsByClassName("btn")[0];
 
-  // get link that opens modal
-  var link = document.getElementById("modalLink");[0]
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-  // get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
 
-  //when the user clicks on link , open modal
-modalLink.onclick = function() {
-    modal.style.display = "modal";
-
-  }
-
-  // when the user clicks on <span> (x), close the modal
-  span.onclick = function () {
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
     modal.style.display = "none";
-  }
+}
 
-  // when users clicks anywhere outside of the modal, close it
-  window.onclick = function (event) {
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+        modal.style.display = "none";
     }
-  }
-  });
+}
+});

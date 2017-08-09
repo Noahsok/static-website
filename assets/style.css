@@ -33,7 +33,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1; /* when scrolling the ns-navbar is alway in front of everything  */
+    z-index: 2; /* when scrolling the ns-navbar is alway in front of everything  */
   }
 
   /* video-container for homepage nested looped video */
@@ -65,9 +65,13 @@ html {
   /* name-container */
 
   .name-container a {
+
     text-decoration: none;
     color: black;
+  }
 
+  #project-color {
+    color: #3bc9b2;
   }
 
   .name-container {
@@ -82,11 +86,11 @@ html {
   }
 
 
-  .works-container  {
+  .works-container {
     color: #3bc9b2;
-
-
   }
+
+
 
   .about-container {
     color: #3bc9b2;
@@ -102,67 +106,79 @@ html {
   }
 
   a:hover {
-    color: #4c4b4b !important;
+    color: #4c4b4b;
     text-decoration: none !important;
   }
 
 
 /* modal background */
 
-.modalLink{
+.btn a {
+
+  position: absolute;
+  top: 90px;
+  text-align: center;
+  width: 100%;
+
+  color: #6b6d6d;
+  font-family: "rift",sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+.modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  /* overflow: auto; */
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(59, 201, 178, 0.94);
 
-  /* font */
+/* font */
   color: #3bc9b2;
   font-family: "rift",sans-serif;
   font-style: normal;
   font-size: 25px;
   font-weight: 500;
+  text-align: center;
 }
 
-.link {
-  /* font */
-  color: #3bc9b2;
-  font-family: "rift",sans-serif;
-  font-style: normal;
-  font-size: 25px;
-  font-weight: 500;
+.modal-content
+p {
 
-  /* link befor modal */
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  top: 100px;
 
-}
-
-/* Modal with content/box */
-
-.modal-content {
-  background-color: white;
-  margin: 15% auto;
+  margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  width: 80%;
+  width: 80%; /* Could be more or less, depending on screen size */
+
+  /* font */
+  color: black;
+  font-family: "rift",sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 500;
+
 }
 
 /* close modal */
 
+/* The Close Button */
 .close {
-  color: #aaa;
+  color: #151414;
   float: right;
-  font-size: 28px;
-
+  font-size: 75px;
+  margin-right: 10%;
+  margin-top: -3%;
+  font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
   color: black;
@@ -382,9 +398,7 @@ html {
 
   .unedited-vid {
     margin-top: 100px;
-    margin-bottom: 10px;
-    margin-left: -85px;
-    margin-right: 5px;
+    margin-left: 0;
     max-width: 800px;
   }
 
