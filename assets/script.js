@@ -82,22 +82,20 @@ var modal = document.getElementsByClassName('modal')[0];
 var btn = document.getElementsByClassName("btn")[0];
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var close = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-if (btn) {
+if (modal) {
   btn.onclick = function() {
     modal.style.display = "block";
   }
-}
-
 
 // When the user clicks on <span> (x), close the modal
-if (span) {
-  span.onclick = function() {
+
+  close.onclick = function() {
     modal.style.display = "none";
   }
-}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
