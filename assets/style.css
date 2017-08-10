@@ -74,12 +74,13 @@ html {
     color: #3bc9b2;
   }
 
-  .name-container {
+  .name-container,
+  .works-container{
     font-family: "rift",sans-serif;
     font-style: normal;
     font-size: 30px;
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -88,6 +89,7 @@ html {
 
   .works-container {
     color: #3bc9b2;
+
   }
 
 
@@ -407,8 +409,9 @@ p {
   /* social icon */
 
   .social-icon {
-    margin-top: 150px;
-    margin-left: 523px;
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 46%;
   }
 
   .social-icon img,
@@ -434,7 +437,6 @@ p {
     background-size: 100px 100px;
     width: 100px;
     height: 100px;
-    margin-left: 50px;
   }
 
   .freddie:hover {
@@ -444,7 +446,6 @@ p {
 
   .mc_embed_signup {
     background:#fff;
-    margin-top: -50px;
-    margin-left: 165px;
+    margin-top: 0;
     font:14px Helvetica,Arial,sans-serif;
     }
